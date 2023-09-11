@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kertas Batu Gunting</title>
+  <link rel="shortcut icon" href="assets/img/items/gunting.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Halaman Pertama -->
+    <div class="start-page" id="start-page">
+      <h1>
+        <span id="first">Kertas</span>
+        <span id="second">Batu</span>
+        <span id="third">Gunting</span>
+        <sub>v2</sub>
+      </h1>
+      <img src="assets/img/items/start.png" alt="" />
+      <button class="start-btn">Mulai Permainan</button>
+      <br>
+      <small>
+        Shortcut : Tekan tombol <strong>SPACE</strong> untuk memulai
+      </small>
+    </div>
+
+    <!-- Halaman Kedua -->
+    <div class="user-select-choice" id="user-select-choice" style="display: none;">
+      <h2>Silahkan kamu memilih salah satu item.</h2>
+      <div class="user-select-choice-items">
+        <img title="Batu" src="assets/img/items/batu.png" alt="" class="user-select-choice-item" data-choice="batu">
+        <img title="Gunting" src="assets/img/items/gunting.png" alt="" class="user-select-choice-item" data-choice="gunting">
+        <img title="Kertas" src="assets/img/items/kertas.png" alt="" class="user-select-choice-item" data-choice="kertas">
+      </div>
+      <h3 class="user-select-choice-text"></h3>
+      <button class="user-confirm-select-choice-btn" style="display: none;">Lanjut</button>
+    </div>
+
+    <!-- Halaman Ketiga -->
+    <div class="computer-select-choice" id="computer-select-choice" style="display: none;">
+      <h2>Komputer sedang memilih...</h2>
+    </div>
+
+    <!-- Halaman Keempat -->
+    <div class="preparing-battle-game" id="preparing-battle-game" style="display: none;">
+      <h2>Bersiaplah !!!</h2>
+      <div class="preparing-battle-game-items">
+        <div class="parent" id="selected-item-choice">
+          <div class="div1">
+            <h3>Kamu</h3>
+            <img src="" alt="" class="user-selected-choice-item" data-choice="">
+          </div>
+          <div class="div2">
+            <br><br><br><br><br>
+            <h1>VS</h1>
+            <br><br>
+          </div>
+          <div class="div3">
+            <h3>Komputer</h3>
+            <img src="" alt="" class="computer-selected-choice-item" data-choice="">
+          </div>
+        </div>
+      </div>
+      <h5 id="countdown"></h5>
+    </div>
+
+    <!-- Halaman Kelima -->
+    <div class="game-result" id="game-result" style="display: none;">
+      <h2>Hasil Permainan</h2>
+      <div class="game-result-items">
+        <img src="" alt="" class="game-result-emoji" id="game-result-emoji">
+        <h3 id="game-result-text"></h3>
+        <p id="game-result-description"></p>
+      </div>
+      <button style="display: none;" class="play-again-btn" id="play-again-btn">Main Lagi</button>
+    </div>
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="assets/Kuis08.js"></script>
+</body>
+
+</html>
