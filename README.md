@@ -3,6 +3,8 @@
 ## Description
 This is a simple game of rock-paper-scissors, which is called "Janken" in Japanese. A player can choose one of three options: rock, paper, or scissors. The computer will randomly choose one of the three options. The winner is determined by the following rules:
 
+![](https://github.com/andikatuluspangestu/janken/blob/main/Janken.png?raw=true)
+
 - Rock wins against scissors.
 - Scissors win against paper.
 - Paper wins against rock.
@@ -16,7 +18,7 @@ This is a simple game of rock-paper-scissors, which is called "Janken" in Japane
 6. Click on the "Play Again" button to play again.
 
 ## Demo
-![Janken Demo]()
+![Janken Demo](https://andikatuluspangestu.github.io/janken)
 
 ## Technologies Used
 - HTML
